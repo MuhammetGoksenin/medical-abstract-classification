@@ -1,0 +1,17 @@
+Naive Bayes - best validation configuration
+Features: CountVectorizer (BoW), unigram, lowercase=True, max_features=30000, fit on train only
+Model: MultinomialNB(alpha=0.5)
+Selected by validation Macro F1 from alpha in [0.01, 0.05, 0.1, 0.5, 1.0] x 4 feature sets
+
+                  precision    recall  f1-score   support
+
+     1 Neoplasms     0.8296    0.9027    0.8646       329
+     2 Digestive     0.8113    0.8190    0.8152       105
+       3 Nervous     0.6954    0.7658    0.7289       158
+4 Cardiovascular     0.8254    0.8844    0.8539       294
+       5 General     0.7603    0.6184    0.6820       359
+
+        accuracy                         0.7920      1245
+       macro avg     0.7844    0.7981    0.7889      1245
+    weighted avg     0.7900    0.7920    0.7880      1245
+

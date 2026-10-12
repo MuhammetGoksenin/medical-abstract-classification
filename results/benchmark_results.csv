@@ -1,0 +1,12 @@
+Model,Group,Checkpoint / configuration,Val Accuracy,Val Macro F1,Test Macro F1
+BiomedBERT (final model),New,microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext,0.8683,0.8672,0.8603
+BioBERT,New,dmis-lab/biobert-base-cased-v1.2,0.849,0.8456,
+DeBERTa-v3,New,microsoft/deberta-v3-base,0.8313,0.8322,
+Logistic Regression,Baseline,"TF-IDF unigram, C=2, balanced",0.8217,0.8203,0.7759
+Linear SVM,Baseline,"Word + char TF-IDF, C=0.5",0.8241,0.818,
+BERT-base,Baseline,bert-base-uncased,,0.8124,
+DistilBERT,Baseline,distilbert-base-uncased,0.8048,0.8027,0.7818
+Naive Bayes (tuned),Baseline,"BoW unigram, alpha=0.5",0.792,0.7889,0.7542
+TextCNN,Baseline,"Class-weighted, trained from scratch",,0.7882,
+BiLSTM,Baseline,"Class-weighted, trained from scratch",0.7333,0.7127,
+Naive Bayes (default),Baseline,"TF-IDF uni+bigram, alpha=1.0",0.6755,0.4849,0.4996

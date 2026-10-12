@@ -1,0 +1,5 @@
+Model,Macro F1,Accuracy,Mean confidence,ECE,Errors with confidence > 0.9,Auto-classified at >= 0.5,Accuracy at >= 0.5,Auto-classified at >= 0.7,Accuracy at >= 0.7
+Logistic Regression,0.8203,0.8217,0.6557,0.1668,11 / 222,71.4%,0.8954,42.7%,0.9361
+Naive Bayes (default),0.4849,0.6755,0.6847,0.046,9 / 404,80.2%,0.7615,45.9%,0.8881
+Naive Bayes (tuned),0.7889,0.792,0.986,0.1968,230 / 259,99.9%,0.7926,98.3%,0.7941
+DistilBERT,0.8027,0.8048,,,71 / 243,,,,

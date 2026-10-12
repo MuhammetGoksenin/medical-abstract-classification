@@ -1,0 +1,2 @@
+Model,Accuracy,Macro Precision,Macro Recall,Macro F1,Weighted F1,Train Time (s),Inference Time (s),Checkpoint
+DistilBERT,0.7967871485943775,0.7953099502022717,0.7717865239009556,0.7817938554870164,0.7947094393802898,345.0,5.0,distilbert-base-uncased

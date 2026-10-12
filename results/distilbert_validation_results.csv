@@ -1,0 +1,2 @@
+Model,Accuracy,Macro Precision,Macro Recall,Macro F1,Weighted F1,Train Time (s),Inference Time (s),Checkpoint,Max Length,Learning Rate,Batch Size,Best Epoch
+DistilBERT,0.8048192771084337,0.8153325276471692,0.7934807583281465,0.8027127570542396,0.8030288866414226,345.0,4.85,distilbert-base-uncased,512,2e-05,16,3
