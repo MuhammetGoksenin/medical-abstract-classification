@@ -1,0 +1,53 @@
+MEDICAL ABSTRACT DISEASE CLASSIFICATION - CLEANING REPORT
+===========================================================
+
+Method
+------
+- Original train and test rows were combined; the original split was discarded.
+- Abstracts were grouped using exact medical_abstract text.
+- No linguistic text preprocessing or normalization was performed.
+- Every abstract group associated with multiple labels was removed entirely.
+- One row was retained for each unique, single-label abstract.
+- abstract_id is the first 16 hexadecimal characters of the exact text's SHA-256 hash.
+
+Summary
+-------
+Original total rows: 14,438
+Original unique abstracts: 11,227
+Ambiguous/conflicting abstract groups removed: 2,929
+Original rows belonging to ambiguous groups: 6,140
+Final clean dataset size: 8,298
+
+CLASS DISTRIBUTIONS
+===================
+
+Before cleaning (original combined rows)
+  Label | Condition | Count | Percentage
+  1 | neoplasms | 3,163 | 21.91%
+  2 | digestive system diseases | 1,494 | 10.35%
+  3 | nervous system diseases | 1,925 | 13.33%
+  4 | cardiovascular diseases | 3,051 | 21.13%
+  5 | general pathological conditions | 4,805 | 33.28%
+  Total | all conditions | 14,438 | 100.00%
+
+After cleaning (unique, unambiguous abstracts)
+  Label | Condition | Count | Percentage
+  1 | neoplasms | 2,195 | 26.45%
+  2 | digestive system diseases | 699 | 8.42%
+  3 | nervous system diseases | 1,049 | 12.64%
+  4 | cardiovascular diseases | 1,961 | 23.63%
+  5 | general pathological conditions | 2,394 | 28.85%
+  Total | all conditions | 8,298 | 100.00%
+
+FINAL DATA QUALITY CHECKS
+=========================
+
+Missing values in final data (total): 0
+  abstract_id: 0
+  medical_abstract: 0
+  condition_label: 0
+  condition_name: 0
+Duplicate abstract texts in final data: 0
+Conflicting-label abstracts remaining in final data: 0
+Labels present: 1, 2, 3, 4, 5
+All required assertions passed: yes

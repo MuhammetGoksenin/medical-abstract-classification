@@ -1,0 +1,64 @@
+MEDICAL ABSTRACT DISEASE CLASSIFICATION - SPLIT REPORT
+========================================================
+
+Random seed: 42
+Split method: stratified 70%/30%, then stratified 50%/50% of temporary data
+Total clean rows: 8,298
+Train size: 5,808 (69.99%)
+Validation size: 1,245 (15.00%)
+Test size: 1,245 (15.00%)
+
+CLASS DISTRIBUTIONS
+===================
+
+Train
+  Label | Condition | Count | Percentage
+  1 | neoplasms | 1,536 | 26.45%
+  2 | digestive system diseases | 489 | 8.42%
+  3 | nervous system diseases | 734 | 12.64%
+  4 | cardiovascular diseases | 1,373 | 23.64%
+  5 | general pathological conditions | 1,676 | 28.86%
+  Total | all conditions | 5,808 | 100.00%
+
+Validation
+  Label | Condition | Count | Percentage
+  1 | neoplasms | 329 | 26.43%
+  2 | digestive system diseases | 105 | 8.43%
+  3 | nervous system diseases | 158 | 12.69%
+  4 | cardiovascular diseases | 294 | 23.61%
+  5 | general pathological conditions | 359 | 28.84%
+  Total | all conditions | 1,245 | 100.00%
+
+Test
+  Label | Condition | Count | Percentage
+  1 | neoplasms | 330 | 26.51%
+  2 | digestive system diseases | 105 | 8.43%
+  3 | nervous system diseases | 157 | 12.61%
+  4 | cardiovascular diseases | 294 | 23.61%
+  5 | general pathological conditions | 359 | 28.84%
+  Total | all conditions | 1,245 | 100.00%
+
+PAIRWISE OVERLAP CHECKS
+=======================
+
+Train vs Validation:
+  abstract_id overlap: 0
+  exact medical_abstract overlap: 0
+Train vs Test:
+  abstract_id overlap: 0
+  exact medical_abstract overlap: 0
+Validation vs Test:
+  abstract_id overlap: 0
+  exact medical_abstract overlap: 0
+
+VERIFICATION
+============
+
+Clean master SHA-256 before: 70c85bd37553dbea92871c64f3ed1d2b106e8ac48603a3440aed1f7f76fe2edf
+Clean master SHA-256 after:  70c85bd37553dbea92871c64f3ed1d2b106e8ac48603a3440aed1f7f76fe2edf
+Clean master unchanged: yes
+Missing values across all splits: 0
+Duplicate abstracts within splits: 0
+All five labels present in every split: yes
+Rows across all splits: 8,298
+All required assertions passed: yes
